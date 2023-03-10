@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@200;600&display=swap');
+
+:root {
+--cor--primaria: #2C3639;
+--cor--secundaria: #DCD7C9;
+--cor--terciaria:#A27B5C;
+--cor--sombra: grey;
+--cor--hover:#3F4E4F;
+--fonte-primaria:'Poppins', sans-serif;
+--fonte-secundaria:'Raleway', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    box-sizing: border-box;
+    background-color:var(--cor--primaria);
+       
+}
+.cabecalho{
+    margin-top: 5%;
+}
+.__navegacao__link{
+    color:var(--cor--secundaria);
+    font-family:var(--fonte-primaria);
+    font-size: 1.5rem;
+    padding-left: 30px;
+    text-decoration: none;
+    padding:5% 0 0 6%;
+      
+}
+.__navegacao__link:hover{
+    color:var(--cor--terciaria);
+    transition: 0.5;
+    cursor: pointer;
+}
+.apresentacao{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:6%;
+    gap:82px;
+}  
+.apresentacao__informaçao{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+}
+ .__informacao__lista{
+    text-align: left;
+    font-family: 20px;
+    font-weight: bold;
+}
+.__informacao__titulo{
+    color:var(--cor--secundaria);
+    font-size: 2.25rem;
+    font-family:var(--fonte-primaria);
+
+}
+.__informacao__titulo>strong{
+    color:var(--cor--terciaria)
+}
+.__informacao__conteudo{
+    color:var(--cor--secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.__informacao__botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px;
+}
+.__botoes__titulo{
+    color:var(--cor--secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.__botoes__botao{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    border: 2px solid var(--cor--terciaria);
+    width:50%;
+    text-align: center;
+    font-size: 1.75rem;
+    color:var(--cor--secundaria);
+    border-radius:8px;
+    padding: 21.5px 0;
+    text-decoration:none;
+    font-family: var(--fonte-secundaria); 
+    font-weight: 600;
+    box-shadow: 2px 4px var(--cor--sombra);
+}
+
+.__botoes__botao:hover{
+    background-color:var(--cor--hover);
+    color:var(--cor--terciaria);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.foto__perfil{
+    width: 50%;
+}
+.foto__perfil:hover{
+    opacity: 0.5;
+}
+.rodape{
+    display:flex;
+    flex-direction: column;    
+}
+.contato{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor--secundaria);
+    justify-content: center;
+    padding:20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.contato:hover{
+    color:var(--cor--terciaria);
+    font-weight: bold;
+    transition: 0.5s;
+}
+.rodape__desenvolvimento{
+    text-align: end;
+    color:var(--cor--primaria);
+    background-color:var(--cor--terciaria);
+    padding: 24px;
+    font-size: 1.12rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 100;
+}
+.primeira__imagem{
+    display:flex;
+    justify-content:flex-start;
+    padding: 4% 6% 2% 6%;
+    align-items: center;
+    gap:25px;
+}
+.segunda__imagem{
+    display:flex;
+    justify-content:flex-end;
+    padding: 2% 6% 2% 6%;
+    align-items: center;
+    gap:25px;
+   
+}
+.__imagem__informacao{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor--secundaria);
+    font-size: 2rem;
+}
+.contato{
+    align-self: baseline;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor--secundaria);
+    text-align: center;
+    padding:20px;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.contato:hover{
+    color:var(--cor--terciaria);
+    font-weight: bold;
+    transition: 0.5s;
+}
+@media(max-width:1200px){
+    .cabecalho{
+        padding:8%;
+    }
+    .menu__navegacao{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        
+    }
+    .apresentacao__informaçao{
+        width:auto ;
+    }
+    .primeira__imagem{
+        flex-direction: column;
+    }
+    .segunda__imagem{
+        flex-direction: column-reverse;
+    }
+    
+}
